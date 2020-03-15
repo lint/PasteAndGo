@@ -33,7 +33,7 @@
 		
 		if (pbStr){
 			
-			NSURL *url = [NSURL URLWithString:pbStr];
+			NSURL *url = [NSURL URLWithString:[pbStr stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
 			
 			if ([[UIApplication sharedApplication] canOpenURL:url]){
 		
@@ -58,7 +58,7 @@
 		
 		if (pbStr){
 			
-			NSURL *url = [NSURL URLWithString:pbStr];
+			NSURL *url = [NSURL URLWithString:[pbStr stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
 			
 			if ([[UIApplication sharedApplication] canOpenURL:url]){
 				[[UIApplication sharedApplication] openURL:url];
@@ -95,7 +95,7 @@
 		
 		if (pbStr){
 			
-			NSURL *url = [NSURL URLWithString:pbStr];
+			NSURL *url = [NSURL URLWithString:[pbStr stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
 			
 			if ([[UIApplication sharedApplication] canOpenURL:url]){
 				
@@ -129,7 +129,7 @@
 		
 		if (pbStr){
 			
-			NSURL *url = [NSURL URLWithString:pbStr];
+			NSURL *url = [NSURL URLWithString:[pbStr stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
 			
 			if ([[UIApplication sharedApplication] canOpenURL:url]){
 				[[UIApplication sharedApplication] openURL:url];
