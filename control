@@ -1,0 +1,9 @@
+Package: com.lint.pasteandgo
+Name: PasteAndGo
+Depends: mobilesubstrate
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Adds a "paste and go" force touch option for Safari.
+Maintainer: lint
+Author: lint
+Section: Tweaks
